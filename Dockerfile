@@ -1,3 +1,5 @@
 FROM ubuntu:latest
-RUN touch test
-RUN ls -l
+RUN apt-get update && apt-get install -y \
+    curl \
+    nginx \
+    cvsß
