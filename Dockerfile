@@ -1,3 +1,4 @@
 FROM ubuntu:latest
-RUN mkdir /new_dir
-COPY something /new_dir
+RUN mkdir sample_folder
+WORKDIR /sample_folder
+RUN touch sample_file
